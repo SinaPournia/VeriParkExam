@@ -1,0 +1,46 @@
+apply plugin: 'com.android.application'
+
+repositories {
+    maven { url 'https://oss.sonatype.org/content/repositories/ksoap2-android-releases/' }
+}
+android {
+    compileSdkVersion 25
+    buildToolsVersion "26.0.0"
+    defaultConfig {
+        applicationId "com.veriparkexam"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    allprojects {
+        repositories {
+            jcenter()
+            maven { url "https://jitpack.io" }        // add this line
+        }
+
+    }
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile files('libs/java-json.jar')
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'com.github.smart-fun:XmlToJson:1.4.1'
+    compile 'com.google.code.ksoap2-android:ksoap2-android:3.1.1'
+    compile 'com.android.support:recyclerview-v7:25.3.1'
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+}

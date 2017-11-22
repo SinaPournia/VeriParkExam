@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+        <TextView
+
+            android:textColor="@color/WHITE"
+            android:textStyle="bold"
+            android:id="@+id/symbol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="MDDDP"
+            android:layout_weight="1"
+
+            android:textSize="20sp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:layout_height="wrap_content">
+
+      <ImageView
+          android:id="@+id/IMKBimage"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_margin="10dp"
+          android:layout_weight="0"
+          android:layout_gravity="center"
+          android:background="@drawable/ic_vertical_align_bottom_white_48dp"/>
+                <TextView
+                    android:id="@+id/Difference"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:text="0.01"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="0.5"
+        android:foregroundGravity="right"
+        android:gravity="right"
+        android:orientation="vertical">
+
+
+
+        <TextView
+
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            android:text="Price:" />
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            android:text="Volume:" />
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            android:text="Buying:" />
+
+        <TextView
+            android:textColor="@color/colorAccent"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            android:text="Selling:" />
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            android:text="Hour:" />
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            android:text="DayPeakPrice:" />
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            android:text="DayLowestPrice:" />
+
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="right"
+            android:text="Total:" />
+    </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.5"
+
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="MDDDP" />
+
+            <TextView
+                android:id="@+id/Volume"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="MDDDP" />
+
+            <TextView
+                android:id="@+id/Buying"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="MDDDP" />
+
+            <TextView
+                android:id="@+id/Selling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="MDDDP" />
+
+            <TextView
+                android:id="@+id/Hour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="MDDDP" />
+
+            <TextView
+                android:id="@+id/DayPeakPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="MDDDP" />
+
+            <TextView
+                android:id="@+id/DayLowestPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="MDDDP" />
+
+            <TextView
+                android:id="@+id/Total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="MDDDP" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
